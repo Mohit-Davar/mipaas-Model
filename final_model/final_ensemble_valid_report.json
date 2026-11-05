@@ -1,0 +1,72 @@
+{
+  "split": "valid",
+  "competition_mean_auc": 0.8966489866098317,
+  "mean_auc_all": 0.9135325450416582,
+  "per_class_auc": {
+    "Cardiomegaly": 0.8199643493761141,
+    "Lung Opacity": 0.9380593262946204,
+    "Edema": 0.9517857142857142,
+    "Consolidation": 0.9259191176470589,
+    "Atelectasis": 0.8481889763779527,
+    "Pleural Effusion": 0.9373867753623188,
+    "Support Devices": 0.9734235559478278
+  },
+  "operating_points": {
+    "Cardiomegaly": {
+      "threshold": 0.10998862981796265,
+      "sensitivity": 0.5,
+      "specificity": 0.9558823529411765,
+      "accuracy": 0.806930693069307,
+      "n_pos": 66,
+      "n_neg": 136
+    },
+    "Lung Opacity": {
+      "threshold": 0.5254030823707581,
+      "sensitivity": 0.7264957264957265,
+      "specificity": 0.9411764705882353,
+      "accuracy": 0.8168316831683168,
+      "n_pos": 117,
+      "n_neg": 85
+    },
+    "Edema": {
+      "threshold": 0.3273499011993408,
+      "sensitivity": 0.9047619047619048,
+      "specificity": 0.86875,
+      "accuracy": 0.8762376237623762,
+      "n_pos": 42,
+      "n_neg": 160
+    },
+    "Consolidation": {
+      "threshold": 0.08886273950338364,
+      "sensitivity": 0.96875,
+      "specificity": 0.8117647058823529,
+      "accuracy": 0.8366336633663366,
+      "n_pos": 32,
+      "n_neg": 170
+    },
+    "Atelectasis": {
+      "threshold": 0.26552703976631165,
+      "sensitivity": 0.8133333333333334,
+      "specificity": 0.7244094488188977,
+      "accuracy": 0.7574257425742574,
+      "n_pos": 75,
+      "n_neg": 127
+    },
+    "Pleural Effusion": {
+      "threshold": 0.4455861747264862,
+      "sensitivity": 0.765625,
+      "specificity": 0.9202898550724637,
+      "accuracy": 0.8712871287128713,
+      "n_pos": 64,
+      "n_neg": 138
+    },
+    "Support Devices": {
+      "threshold": 0.581473171710968,
+      "sensitivity": 0.8484848484848485,
+      "specificity": 0.941747572815534,
+      "accuracy": 0.8960396039603961,
+      "n_pos": 99,
+      "n_neg": 103
+    }
+  }
+}

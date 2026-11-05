@@ -1,0 +1,72 @@
+{
+  "split": "test",
+  "competition_mean_auc": 0.8415008933012424,
+  "mean_auc_all": 0.8400442263047415,
+  "per_class_auc": {
+    "Cardiomegaly": 0.8867169173384205,
+    "Lung Opacity": 0.7616064661090198,
+    "Edema": 0.8781506718518842,
+    "Consolidation": 0.7755700564557518,
+    "Atelectasis": 0.7660079438417163,
+    "Pleural Effusion": 0.9010588770184393,
+    "Support Devices": 0.9111986515179585
+  },
+  "operating_points": {
+    "Cardiomegaly": {
+      "threshold": 0.10998862981796265,
+      "sensitivity": 0.8234790059982862,
+      "specificity": 0.8086978381096028,
+      "accuracy": 0.8105886221637619,
+      "n_pos": 1167,
+      "n_neg": 7956
+    },
+    "Lung Opacity": {
+      "threshold": 0.5254030823707581,
+      "sensitivity": 0.7714723926380368,
+      "specificity": 0.6205337925096858,
+      "accuracy": 0.6953311617806732,
+      "n_pos": 4564,
+      "n_neg": 4646
+    },
+    "Edema": {
+      "threshold": 0.3273499011993408,
+      "sensitivity": 0.8123436196830692,
+      "specificity": 0.7707271885132005,
+      "accuracy": 0.7819718309859155,
+      "n_pos": 2398,
+      "n_neg": 6477
+    },
+    "Consolidation": {
+      "threshold": 0.08886273950338364,
+      "sensitivity": 0.7600644122383253,
+      "specificity": 0.643014658191724,
+      "accuracy": 0.6517406962785114,
+      "n_pos": 621,
+      "n_neg": 7709
+    },
+    "Atelectasis": {
+      "threshold": 0.26552703976631165,
+      "sensitivity": 0.7571329157967989,
+      "specificity": 0.6267455980570734,
+      "accuracy": 0.6500934579439253,
+      "n_pos": 1437,
+      "n_neg": 6588
+    },
+    "Pleural Effusion": {
+      "threshold": 0.4455861747264862,
+      "sensitivity": 0.8325163398692811,
+      "specificity": 0.8111425873465533,
+      "accuracy": 0.8198951711832274,
+      "n_pos": 3672,
+      "n_neg": 5295
+    },
+    "Support Devices": {
+      "threshold": 0.581473171710968,
+      "sensitivity": 0.8747113163972287,
+      "specificity": 0.8240895024994049,
+      "accuracy": 0.8520804512078323,
+      "n_pos": 5196,
+      "n_neg": 4201
+    }
+  }
+}

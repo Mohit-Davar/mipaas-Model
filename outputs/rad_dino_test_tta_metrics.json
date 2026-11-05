@@ -1,0 +1,60 @@
+{
+  "model_name": "rad_dino",
+  "run_name": "rad_dino",
+  "checkpoint": "..\\checkpoints\\rad_dino_best.pth",
+  "split": "test",
+  "tta": true,
+  "image_size": 518,
+  "samples_evaluated": 9444,
+  "competition_mean_auc": 0.838272198399436,
+  "mean_auc_all": 0.836559792735739,
+  "pred_std": 0.2358807474374771,
+  "thresholds": {
+    "Cardiomegaly": 0.09810590744018555,
+    "Lung Opacity": 0.4776120185852051,
+    "Edema": 0.32372522354125977,
+    "Consolidation": 0.07145379483699799,
+    "Atelectasis": 0.23086732625961304,
+    "Pleural Effusion": 0.41958850622177124,
+    "Support Devices": 0.5507776737213135
+  },
+  "per_class_auc": {
+    "Cardiomegaly": 0.8850306936652014,
+    "Lung Opacity": 0.7532225236489277,
+    "Edema": 0.8760876524271486,
+    "Consolidation": 0.7677408863346249,
+    "Atelectasis": 0.7623362778912252,
+    "Pleural Effusion": 0.9001654816789795,
+    "Support Devices": 0.9113350335040651
+  },
+  "per_class_support": {
+    "Cardiomegaly": [
+      1167,
+      7956
+    ],
+    "Lung Opacity": [
+      4564,
+      4646
+    ],
+    "Edema": [
+      2398,
+      6477
+    ],
+    "Consolidation": [
+      621,
+      7709
+    ],
+    "Atelectasis": [
+      1437,
+      6588
+    ],
+    "Pleural Effusion": [
+      3672,
+      5295
+    ],
+    "Support Devices": [
+      5196,
+      4201
+    ]
+  }
+}

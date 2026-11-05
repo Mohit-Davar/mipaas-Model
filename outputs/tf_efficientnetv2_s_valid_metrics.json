@@ -1,0 +1,47 @@
+{
+  "per_class_auc": {
+    "Cardiomegaly": 0.8067067736185383,
+    "Lung Opacity": 0.9180492709904474,
+    "Edema": 0.9507440476190476,
+    "Consolidation": 0.9104779411764705,
+    "Atelectasis": 0.8296587926509185,
+    "Pleural Effusion": 0.9324048913043479,
+    "Support Devices": 0.9602824360105914
+  },
+  "per_class_support": {
+    "Cardiomegaly": [
+      66,
+      136
+    ],
+    "Lung Opacity": [
+      117,
+      85
+    ],
+    "Edema": [
+      42,
+      160
+    ],
+    "Consolidation": [
+      32,
+      170
+    ],
+    "Atelectasis": [
+      75,
+      127
+    ],
+    "Pleural Effusion": [
+      64,
+      138
+    ],
+    "Support Devices": [
+      99,
+      103
+    ]
+  },
+  "competition_mean_auc": 0.8859984892738645,
+  "mean_auc_all": 0.9011891647671945,
+  "pred_std": 0.23201647400856018,
+  "collapsed": false,
+  "competition_mean_auc_mapped": 0.8859984892738645,
+  "val_loss": 0.4248213045077749
+}

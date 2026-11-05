@@ -1,0 +1,9 @@
+{
+  "Cardiomegaly": 0.10998862981796265,
+  "Lung Opacity": 0.5254030823707581,
+  "Edema": 0.3273499011993408,
+  "Consolidation": 0.08886273950338364,
+  "Atelectasis": 0.26552703976631165,
+  "Pleural Effusion": 0.4455861747264862,
+  "Support Devices": 0.581473171710968
+}

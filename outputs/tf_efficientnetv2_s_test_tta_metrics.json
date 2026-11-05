@@ -1,0 +1,60 @@
+{
+  "model_name": "tf_efficientnetv2_s",
+  "run_name": "tf_efficientnetv2_s",
+  "checkpoint": "..\\checkpoints\\tf_efficientnetv2_s_best.pth",
+  "split": "test",
+  "tta": true,
+  "image_size": 512,
+  "samples_evaluated": 9444,
+  "competition_mean_auc": 0.8366642225708685,
+  "mean_auc_all": 0.8354141313569361,
+  "pred_std": 0.23424161970615387,
+  "thresholds": {
+    "Cardiomegaly": 0.17339470982551575,
+    "Lung Opacity": 0.5162308812141418,
+    "Edema": 0.31247058510780334,
+    "Consolidation": 0.07603460550308228,
+    "Atelectasis": 0.27630943059921265,
+    "Pleural Effusion": 0.42851337790489197,
+    "Support Devices": 0.5662227869033813
+  },
+  "per_class_auc": {
+    "Cardiomegaly": 0.8836187936823051,
+    "Lung Opacity": 0.7576901223636062,
+    "Edema": 0.8746029287181961,
+    "Consolidation": 0.7671476487005486,
+    "Atelectasis": 0.7603737146343555,
+    "Pleural Effusion": 0.897578027118937,
+    "Support Devices": 0.9068876842806041
+  },
+  "per_class_support": {
+    "Cardiomegaly": [
+      1167,
+      7956
+    ],
+    "Lung Opacity": [
+      4564,
+      4646
+    ],
+    "Edema": [
+      2398,
+      6477
+    ],
+    "Consolidation": [
+      621,
+      7709
+    ],
+    "Atelectasis": [
+      1437,
+      6588
+    ],
+    "Pleural Effusion": [
+      3672,
+      5295
+    ],
+    "Support Devices": [
+      5196,
+      4201
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "args": {
+    "model_name": "rad_dino",
+    "run_name": null,
+    "pretrained": true,
+    "dropout": 0.1,
+    "head_hidden": 768,
+    "drop_path_rate": 0.1,
+    "grad_checkpointing": false,
+    "freeze_blocks": 0,
+    "layer_decay": 0.75,
+    "epochs": 2,
+    "batch_size": 8,
+    "accum_steps": 4,
+    "image_size": 518,
+    "backbone_lr": 5e-05,
+    "head_lr": 0.001,
+    "weight_decay": 0.05,
+    "warmup_epochs": 0.2,
+    "min_lr_ratio": 0.01,
+    "grad_clip": 1.0,
+    "amp": true,
+    "max_vram_fraction": 0.92,
+    "loss": "bce",
+    "uncertainty_policy": "mixed",
+    "label_smoothing": true,
+    "use_pos_weight": false,
+    "manifest": "D:\\Yatharth\\Mipaas\\split_manifest.parquet",
+    "chunks": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "cache_dir": "auto",
+    "tune_sample_limit": 5000,
+    "sample_limit": null,
+    "num_workers": 8,
+    "hflip": true,
+    "seed": 42,
+    "evals_per_epoch": 3,
+    "patience": 2,
+    "resume": false,
+    "skip_test": false
+  },
+  "history": [
+    {
+      "epoch": 0.333,
+      "train_loss": 0.46715810765101257,
+      "val_loss": 0.40124716672897337,
+      "comp_auc": 0.8032088656342798,
+      "comp_auc_mapped": 0.7910237043863833,
+      "mean_auc_all": 0.8070528579374809,
+      "pred_std": 0.22646965086460114,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8440881325298294,
+        "Lung Opacity": 0.7256808264611454,
+        "Edema": 0.8461954719240867,
+        "Consolidation": 0.7329407157720156,
+        "Atelectasis": 0.7064713395723792,
+        "Pleural Effusion": 0.8863486683730883,
+        "Support Devices": 0.907644850929822
+      }
+    },
+    {
+      "epoch": 0.666,
+      "train_loss": 0.44627078605097764,
+      "val_loss": 0.38930321407318114,
+      "comp_auc": 0.8130899344422549,
+      "comp_auc_mapped": 0.8023437816825822,
+      "mean_auc_all": 0.8156951333849121,
+      "pred_std": 0.2351136952638626,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8595416499538484,
+        "Lung Opacity": 0.7277770451470541,
+        "Edema": 0.8631870422405454,
+        "Consolidation": 0.7378540660488186,
+        "Atelectasis": 0.7092282597800235,
+        "Pleural Effusion": 0.8956386541880388,
+        "Support Devices": 0.9166392163360555
+      }
+    },
+    {
+      "epoch": 1.0,
+      "train_loss": 0.4359680971397812,
+      "val_loss": 0.3819693130970001,
+      "comp_auc": 0.8195571484149928,
+      "comp_auc_mapped": 0.8092424218850353,
+      "mean_auc_all": 0.8231573822719529,
+      "pred_std": 0.23701874911785126,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8638499325849213,
+        "Lung Opacity": 0.7423525935798732,
+        "Edema": 0.8628563038371182,
+        "Consolidation": 0.7523614641000637,
+        "Atelectasis": 0.7194732121974259,
+        "Pleural Effusion": 0.8992448293554354,
+        "Support Devices": 0.9219633402488323
+      }
+    },
+    {
+      "epoch": 1.0,
+      "train_loss": 0.43596544074018057,
+      "val_loss": 0.38253422417640687,
+      "comp_auc": 0.8196089415845318,
+      "comp_auc_mapped": 0.8093119268798944,
+      "mean_auc_all": 0.8231558280787763,
+      "pred_std": 0.2382335215806961,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8637283115945881,
+        "Lung Opacity": 0.7420213158629428,
+        "Edema": 0.8629584504122716,
+        "Consolidation": 0.7526424902293511,
+        "Atelectasis": 0.719428408921775,
+        "Pleural Effusion": 0.8992870467646734,
+        "Support Devices": 0.9220247727658324
+      }
+    },
+    {
+      "epoch": 1.333,
+      "train_loss": 0.4063600678683659,
+      "val_loss": 0.37935981531143187,
+      "comp_auc": 0.8238800682070868,
+      "comp_auc_mapped": 0.8122283220381286,
+      "mean_auc_all": 0.8274179393733094,
+      "pred_std": 0.2291928380727768,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8662138902447079,
+        "Lung Opacity": 0.7496890234244972,
+        "Edema": 0.8640331199041873,
+        "Consolidation": 0.7606958851939157,
+        "Atelectasis": 0.7285504317820769,
+        "Pleural Effusion": 0.8999070139105466,
+        "Support Devices": 0.9228362111532348
+      }
+    },
+    {
+      "epoch": 1.666,
+      "train_loss": 0.40556770196840086,
+      "val_loss": 0.37696522164344787,
+      "comp_auc": 0.8272955098637261,
+      "comp_auc_mapped": 0.8160900488084923,
+      "mean_auc_all": 0.830170288210076,
+      "pred_std": 0.23521101474761963,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8655399408164877,
+        "Lung Opacity": 0.7509405636267972,
+        "Edema": 0.8673479893131881,
+        "Consolidation": 0.770097207398819,
+        "Atelectasis": 0.7324532527178121,
+        "Pleural Effusion": 0.9010391590723237,
+        "Support Devices": 0.9237739045251042
+      }
+    },
+    {
+      "epoch": 2.0,
+      "train_loss": 0.4040475060375931,
+      "val_loss": 0.37669142417907714,
+      "comp_auc": 0.8273022988954823,
+      "comp_auc_mapped": 0.8157225771617412,
+      "mean_auc_all": 0.8305034219419742,
+      "pred_std": 0.23631085455417633,
+      "per_class_auc": {
+        "Cardiomegaly": 0.866634932447997,
+        "Lung Opacity": 0.7526251389202074,
+        "Edema": 0.8680772951310516,
+        "Consolidation": 0.7674977157029108,
+        "Atelectasis": 0.732921598823876,
+        "Pleural Effusion": 0.9013799523715764,
+        "Support Devices": 0.9243873201962003
+      }
+    },
+    {
+      "epoch": 2.0,
+      "train_loss": 0.404059687747231,
+      "val_loss": 0.3766843262195587,
+      "comp_auc": 0.8272956067278671,
+      "comp_auc_mapped": 0.8157158138190951,
+      "mean_auc_all": 0.8304981839264914,
+      "pred_std": 0.23629701137542725,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8666234549704324,
+        "Lung Opacity": 0.752626481144434,
+        "Edema": 0.8680763738541619,
+        "Consolidation": 0.7674769842671437,
+        "Atelectasis": 0.732920459757546,
+        "Pleural Effusion": 0.9013807607900512,
+        "Support Devices": 0.9243827727016715
+      }
+    }
+  ]
+}

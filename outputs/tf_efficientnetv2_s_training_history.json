@@ -1,0 +1,265 @@
+{
+  "args": {
+    "model_name": "tf_efficientnetv2_s",
+    "run_name": null,
+    "pretrained": true,
+    "dropout": 0.2,
+    "head_hidden": 768,
+    "drop_path_rate": 0.1,
+    "grad_checkpointing": false,
+    "freeze_blocks": 0,
+    "layer_decay": 0.75,
+    "epochs": 3,
+    "batch_size": 16,
+    "accum_steps": 2,
+    "image_size": 512,
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "weight_decay": 0.01,
+    "warmup_epochs": 0.2,
+    "min_lr_ratio": 0.01,
+    "grad_clip": 1.0,
+    "amp": true,
+    "max_vram_fraction": 0.92,
+    "loss": "bce",
+    "uncertainty_policy": "mixed",
+    "label_smoothing": true,
+    "use_pos_weight": false,
+    "manifest": "D:\\Yatharth\\Mipaas\\split_manifest.parquet",
+    "chunks": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "cache_dir": "auto",
+    "tune_sample_limit": 5000,
+    "sample_limit": null,
+    "num_workers": 8,
+    "hflip": true,
+    "seed": 42,
+    "evals_per_epoch": 3,
+    "patience": 2,
+    "resume": false,
+    "skip_test": false
+  },
+  "history": [
+    {
+      "epoch": 0.333,
+      "train_loss": 0.4760116491903806,
+      "val_loss": 0.4154371057510376,
+      "comp_auc": 0.7968240193092828,
+      "comp_auc_mapped": 0.7836877439159105,
+      "mean_auc_all": 0.7999036267783115,
+      "pred_std": 0.18629230558872223,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8322061242209411,
+        "Lung Opacity": 0.7234268964286097,
+        "Edema": 0.8406470818554517,
+        "Consolidation": 0.7189086050815052,
+        "Atelectasis": 0.7109883071044327,
+        "Pleural Effusion": 0.8813699782840833,
+        "Support Devices": 0.891778394473157
+      }
+    },
+    {
+      "epoch": 0.666,
+      "train_loss": 0.45529290737386524,
+      "val_loss": 0.4061801525592804,
+      "comp_auc": 0.8098982557790755,
+      "comp_auc_mapped": 0.7973635785312789,
+      "mean_auc_all": 0.8102243348991951,
+      "pred_std": 0.21303272247314453,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8538415721486321,
+        "Lung Opacity": 0.7181147084957424,
+        "Edema": 0.8551910497950159,
+        "Consolidation": 0.7404316745625282,
+        "Atelectasis": 0.7122634918609914,
+        "Pleural Effusion": 0.8877634905282099,
+        "Support Devices": 0.9039643569032455
+      }
+    },
+    {
+      "epoch": 1.0,
+      "train_loss": 0.445653705845554,
+      "val_loss": 0.3924429304599762,
+      "comp_auc": 0.8107695725037167,
+      "comp_auc_mapped": 0.8023355667265998,
+      "mean_auc_all": 0.814119187317942,
+      "pred_std": 0.22596608102321625,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8554756025071643,
+        "Lung Opacity": 0.7330405774517068,
+        "Edema": 0.8588637201160808,
+        "Consolidation": 0.7437736587912804,
+        "Atelectasis": 0.7008280252842352,
+        "Pleural Effusion": 0.8949068558198224,
+        "Support Devices": 0.9119458712553037
+      }
+    },
+    {
+      "epoch": 1.0,
+      "train_loss": 0.44564462577950487,
+      "val_loss": 0.3927122627735138,
+      "comp_auc": 0.8110312557724398,
+      "comp_auc_mapped": 0.8025112072734846,
+      "mean_auc_all": 0.8143373110314245,
+      "pred_std": 0.22542278468608856,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8551779935275081,
+        "Lung Opacity": 0.7335292309592072,
+        "Edema": 0.8583458473444194,
+        "Consolidation": 0.7445695155754509,
+        "Atelectasis": 0.70228792863066,
+        "Pleural Effusion": 0.8947749937841603,
+        "Support Devices": 0.9116756673985653
+      }
+    },
+    {
+      "epoch": 1.333,
+      "train_loss": 0.4168119462508729,
+      "val_loss": 0.3868012205600739,
+      "comp_auc": 0.8204655120519468,
+      "comp_auc_mapped": 0.8088660683673117,
+      "mean_auc_all": 0.822337554694622,
+      "pred_std": 0.21772482991218567,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8603285619244145,
+        "Lung Opacity": 0.7419297929484907,
+        "Edema": 0.8582901100925884,
+        "Consolidation": 0.7566590139514884,
+        "Atelectasis": 0.7305870823803146,
+        "Pleural Effusion": 0.8964627919109288,
+        "Support Devices": 0.9121055296541292
+      }
+    },
+    {
+      "epoch": 1.666,
+      "train_loss": 0.41551172693348465,
+      "val_loss": 0.38884441118240354,
+      "comp_auc": 0.8214011559345529,
+      "comp_auc_mapped": 0.8098551583699853,
+      "mean_auc_all": 0.8229732340026807,
+      "pred_std": 0.22418604791164398,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8582485208149089,
+        "Lung Opacity": 0.7411014728226438,
+        "Edema": 0.8628891243263161,
+        "Consolidation": 0.759339127897602,
+        "Atelectasis": 0.7284433595470465,
+        "Pleural Effusion": 0.898085647086891,
+        "Support Devices": 0.9127053855233571
+      }
+    },
+    {
+      "epoch": 2.0,
+      "train_loss": 0.41376875836533983,
+      "val_loss": 0.383463503408432,
+      "comp_auc": 0.8267503715050848,
+      "comp_auc_mapped": 0.8149301700930126,
+      "mean_auc_all": 0.8286960517608722,
+      "pred_std": 0.22618640959262848,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8662402683071808,
+        "Lung Opacity": 0.7498045385969998,
+        "Edema": 0.8652078630982543,
+        "Consolidation": 0.765928653147723,
+        "Atelectasis": 0.7355946078118687,
+        "Pleural Effusion": 0.9007804651603974,
+        "Support Devices": 0.9173159662036822
+      }
+    },
+    {
+      "epoch": 2.0,
+      "train_loss": 0.4137840469826182,
+      "val_loss": 0.38310128870010374,
+      "comp_auc": 0.8267384381803004,
+      "comp_auc_mapped": 0.8148185391807322,
+      "mean_auc_all": 0.8285904856344558,
+      "pred_std": 0.227116197347641,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8660747509991447,
+        "Lung Opacity": 0.7493690707244789,
+        "Edema": 0.8652709705652034,
+        "Consolidation": 0.7655324523752849,
+        "Atelectasis": 0.7360456780785924,
+        "Pleural Effusion": 0.9007683388832759,
+        "Support Devices": 0.9170721378152117
+      }
+    },
+    {
+      "epoch": 2.333,
+      "train_loss": 0.4002064624978177,
+      "val_loss": 0.3825695116996765,
+      "comp_auc": 0.826729609979834,
+      "comp_auc_mapped": 0.8157624034657349,
+      "mean_auc_all": 0.8283755481527229,
+      "pred_std": 0.23405323922634125,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8666931252728417,
+        "Lung Opacity": 0.7488912388998057,
+        "Edema": 0.8642034409691832,
+        "Consolidation": 0.771607146970523,
+        "Atelectasis": 0.7307828119447052,
+        "Pleural Effusion": 0.9003615247419169,
+        "Support Devices": 0.9160895482700835
+      }
+    },
+    {
+      "epoch": 2.666,
+      "train_loss": 0.3994281790109986,
+      "val_loss": 0.382667698431015,
+      "comp_auc": 0.8277880563286703,
+      "comp_auc_mapped": 0.8162099906235735,
+      "mean_auc_all": 0.829647257742854,
+      "pred_std": 0.23654358088970184,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8672593474993597,
+        "Lung Opacity": 0.7510123726229209,
+        "Edema": 0.8656891151135475,
+        "Consolidation": 0.7713706550365872,
+        "Atelectasis": 0.7341779889859879,
+        "Pleural Effusion": 0.9004431750078686,
+        "Support Devices": 0.9175781499337058
+      }
+    },
+    {
+      "epoch": 3.0,
+      "train_loss": 0.39839644618540504,
+      "val_loss": 0.38163099384307864,
+      "comp_auc": 0.8287016378571481,
+      "comp_auc_mapped": 0.81654923467887,
+      "mean_auc_all": 0.8302413880146885,
+      "pred_std": 0.2355116903781891,
+      "per_class_auc": {
+        "Cardiomegaly": 0.867283510610022,
+        "Lung Opacity": 0.7504170122894049,
+        "Edema": 0.865973674512875,
+        "Consolidation": 0.7728686932284987,
+        "Atelectasis": 0.7364466294267914,
+        "Pleural Effusion": 0.9009356815075531,
+        "Support Devices": 0.917764514527674
+      }
+    },
+    {
+      "epoch": 3.0,
+      "train_loss": 0.398395098063454,
+      "val_loss": 0.3821508806228638,
+      "comp_auc": 0.8285266545972654,
+      "comp_auc_mapped": 0.8163621274306665,
+      "mean_auc_all": 0.8300475194214919,
+      "pred_std": 0.23399589955806732,
+      "per_class_auc": {
+        "Cardiomegaly": 0.8671641045714995,
+        "Lung Opacity": 0.7503275866003071,
+        "Edema": 0.8656898060712148,
+        "Consolidation": 0.7726406474350607,
+        "Atelectasis": 0.7363915745541694,
+        "Pleural Effusion": 0.9007471403543819,
+        "Support Devices": 0.9173717763638102
+      }
+    }
+  ]
+}

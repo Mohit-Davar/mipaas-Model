@@ -1,0 +1,60 @@
+{
+  "model_name": "densenet121",
+  "run_name": "densenet121",
+  "checkpoint": "..\\checkpoints\\densenet121_best.pth",
+  "split": "valid",
+  "tta": true,
+  "image_size": 512,
+  "samples_evaluated": 202,
+  "competition_mean_auc": 0.8871703285131238,
+  "mean_auc_all": 0.9036119666254424,
+  "pred_std": 0.21446183323860168,
+  "thresholds": {
+    "Cardiomegaly": 0.05000000074505806,
+    "Lung Opacity": 0.4104631245136261,
+    "Edema": 0.2888539433479309,
+    "Consolidation": 0.08457939326763153,
+    "Atelectasis": 0.2528289556503296,
+    "Pleural Effusion": 0.41025421023368835,
+    "Support Devices": 0.3034546375274658
+  },
+  "per_class_auc": {
+    "Cardiomegaly": 0.8075980392156863,
+    "Lung Opacity": 0.9227752639517345,
+    "Edema": 0.944047619047619,
+    "Consolidation": 0.9102941176470588,
+    "Atelectasis": 0.8381102362204724,
+    "Pleural Effusion": 0.9358016304347826,
+    "Support Devices": 0.9666568598607433
+  },
+  "per_class_support": {
+    "Cardiomegaly": [
+      66,
+      136
+    ],
+    "Lung Opacity": [
+      117,
+      85
+    ],
+    "Edema": [
+      42,
+      160
+    ],
+    "Consolidation": [
+      32,
+      170
+    ],
+    "Atelectasis": [
+      75,
+      127
+    ],
+    "Pleural Effusion": [
+      64,
+      138
+    ],
+    "Support Devices": [
+      99,
+      103
+    ]
+  }
+}
