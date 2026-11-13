@@ -4,7 +4,6 @@ chexpert_pipeline_backup_*/
 labels/
 outputs/*.csv
 .env
-*.pth
 *.parquet
 split_manifest*.csv
 __pycache__/

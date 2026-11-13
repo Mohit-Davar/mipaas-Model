@@ -41,7 +41,7 @@ from config import (
 
 
 def run_preflight_audit() -> bool:
-    print("=" * 68)
+    print("=" * 68) 
     print(" CheXpert Plus Pre-Flight Quality Control Audit")
     print(" Standard Operating Procedure: SOP-MIPAAS-CXR-001")
     print("=" * 68)
